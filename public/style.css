@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+/*------ Utills --*/
+body {
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+    color: #505962;
+    padding: 0;
+    margin: 0;
+}
+
+.offset:before {
+    display: block;
+    content: "";
+}
+
+h3.heading {
+    font-size: 3rem;
+    font-weight: 1000;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    padding-top: 5rem;
+}
+
+.btn-secondary {
+    border-width: medium;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    padding: .6rem 1.2rem;
+    margin: 1rem;
+    color: #808080;
+    background-color: white;
+    border-color: white;
+    width: 20vw;
+}
+
+.btn-secondary:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-color: rgba(0, 0, 0, 0);
+    color: white;
+}
+
+/*------ Home Section --*/
+#home {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.3)!important;
+    color: white;
+    margin-bottom: 5rem;
+}
+
+#home h1 {
+    padding-top: 20rem;
+    font-size: 10rem;
+}
+
+.down a {
+    font-size: 10rem;
+    color: white;
+}
+
+.down a:hover {
+    color: rgba(0, 0, 0, 0.5)!important;
+}
+
+/*------ Navigation Section --*/
+.navbar {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .9rem;
+    letter-spacing: .1rem;
+    background: rgba(0, 0, 0, 0)!important;
+}
+
+.navbar-nav li {
+    padding-right: .7rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: gray;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+    color: black;
+}
+
+/*-- About Section --*/
+#about {
+    background-color: rgba(0, 0, 0, 0.4)!important;
+    color: white;
+    padding: 5rem 0 10rem;
+    margin: 5rem;
+}
+
+#about img {
+    width: 300px;
+    border-radius: 50%;
+}
+
+.detail {
+    padding: 3rem 20vw;
+}
+
+/*-- Skills Section --*/
+#skills {
+    background-color: rgba(0, 0, 0, 0.5)!important;
+    color: white;
+    padding: 5rem 0;
+    margin: 10rem;
+}
+
+.skill {
+    padding: 0 20vw 5rem;
+}
+
+/*-- Price Section --*/
+#price {
+    background-color: rgba(0, 0, 0, 0.6)!important;
+    color: white;
+    padding: 5rem 0;
+    margin: 10rem 15rem;
+}
+
+.price {
+    padding: 0 20vw 5rem;
+}
+
+/*-- Contact Section --*/
+#contact {
+    background-color: rgba(0, 0, 0, 0.7)!important;
+    color: white;
+    padding: 5rem 0 10rem;
+    margin: 10rem 20rem;
+}
+
+#contact img {
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+#contact a {
+    color: white;
+}
+
+#contact svg.svg-inline--fa {
+    font-size: 3rem;
+    margin: 1.2rem .5rem 0 0;
+}
+
+#contact svg.svg-inline--fa:hover {
+    color: #1ebba3!important;
+}
+
+/*-- Thanks Section --*/
+#thanks {
+    background-color: rgba(0, 0, 0, 0.8)!important;
+    color: white;
+    padding: 10rem 0;
+    margin: 5rem 25rem;
+}
+
+.thanks {
+    font-size: 10rem;
+}
+
+/*-- Footer Section --*/
+#footer {
+    background-color: rgba(0, 0, 0, 0.9)!important;
+    color: white;
+    padding: 2rem;
+    margin: 10rem 30rem 0;
+}
+
+/*-- Media Queries --*/
+@media (max-width: 1312px) {
+    #about {
+        padding: 5rem 0 10rem;
+        margin: 5rem 0;
+    }
+    #skills {
+        padding: 5rem 0 10rem;
+        margin: 5rem 0;
+    }
+    #price {
+        padding: 5rem 0;
+        margin: 5rem 0rem;
+    }
+    #contact {
+        padding: 5rem 0 10rem;
+        margin: 5rem 0rem;
+    }
+    #thanks {
+        padding: 10rem 0;
+        margin: 5rem 0rem;
+    }
+    #footer {
+        padding: 2rem;
+        margin: 5rem 0rem 0;
+    }
+}
+@media (max-width: 680px) {
+    #home h1 {
+        font-size: 3rem;
+    }
+    .navbar {
+        position: relative;
+    }
+    .thanks {
+        font-size: 3rem;
+    }
+    .detail {
+        padding: 3rem 0;
+    }
+    .btn-secondary {
+        width: 80vw;
+    }
+    .skill {
+        padding: 0;
+    }
+    .price {
+        padding: 0;
+    }
+    .navbar {
+        display: none;
+    }
+}
+
+/* ============== BOOTSTRAP BREAK POINTS:
+
+Extra smaill (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+============= */
