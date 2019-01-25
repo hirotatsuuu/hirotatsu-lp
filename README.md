@@ -25,3 +25,8 @@ firebase serve
 ```
 firebase deploy
 ```
+
+## Reference
+- https://getbootstrap.com/
+- https://fontawesome.com/
+- https://github.com/cferdinandi/smooth-scroll
