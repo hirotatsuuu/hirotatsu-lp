@@ -226,6 +226,9 @@ h3.heading {
     .navbar {
         display: none;
     }
+    .down {
+        display: none;
+    }
 }
 
 /* ============== BOOTSTRAP BREAK POINTS:
