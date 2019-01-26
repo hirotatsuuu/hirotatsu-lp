@@ -125,6 +125,7 @@ h3.heading {
 .sns a {
     color: white;
 }
+
 .sns svg.svg-inline--fa {
     font-size: 3rem;
     margin: 1.2rem .5rem 0 0;
@@ -248,6 +249,7 @@ h3.heading {
         margin: 5rem 0rem 0;
     }
 }
+
 @media (max-width: 680px) {
     #home h1 {
         font-size: 3rem;
