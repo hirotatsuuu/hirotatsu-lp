@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700');
 
-/*------ Body --*/
+/*-- Body --*/
 body {
     overflow-x: hidden;
     font-family: 'Lato', sans-serif;
@@ -27,7 +27,7 @@ body {
     100% {background-color: gray;}
 }
 
-/*------ Utills --*/
+/*-- Utills --*/
 .offset:before {
     display: block;
     content: "";
@@ -60,7 +60,7 @@ h3.heading {
     color: white;
 }
 
-/*------ Home Section --*/
+/*-- Home Section --*/
 #home {
     height: 100vh;
     width: 100vw;
@@ -87,7 +87,7 @@ h3.heading {
     color: rgba(0, 0, 0, 0.5);
 }
 
-/*------ Navigation Section --*/
+/*-- Navigation Section --*/
 .navbar {
     text-transform: uppercase;
     font-weight: 700;
@@ -350,7 +350,7 @@ h3.heading {
     }
 }
 
-/* ============== BOOTSTRAP BREAK POINTS:
+/*-- BOOTSTRAP BREAK POINTS:
 
 Extra smaill (xs) devices (portrait phones, less than 576px)
 No media query since this is the default in Bootstrap
@@ -364,4 +364,4 @@ Large (lg) devices (deskt1ops, 992px and up)
 Extra (xl) large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
 
-============= */
+-- */
