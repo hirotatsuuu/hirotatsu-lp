@@ -10,6 +10,7 @@ document.getElementById('audio').play();
 document.getElementById('audio').pause();
 
 $(function () {
+    // play and pause
     var audioBtn = $('.audio_button'),
         audioWrap = $('.audio_wrap'),
         audio = document.getElementById('audio');
@@ -22,6 +23,20 @@ $(function () {
             audio.play();
             audioWrap.addClass('play');
         }
+    });
+
+    // only play
+    var playBtn = $('.play_button');
+    playBtn.on('click', function () {
+        audio.play();
+        audioWrap.addClass('play');
+    });
+
+    // only pause
+    var pauseBtn = $('.pause_button');
+    pauseBtn.on('click', function () {
+        audio.pause();
+        audioWrap.removeClass('play');
     });
 });
 

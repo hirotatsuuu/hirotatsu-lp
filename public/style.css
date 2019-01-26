@@ -10,12 +10,21 @@ body {
 }
 
 body {
-    animation: bodyanime 3s ease 1s infinite alternate;
+    animation: rainbow 8s ease 0s infinite alternate;
 }
 
-@keyframes bodyanime {
-    0% {background-color: white!important;}
-    100% {background-color: rgba(0, 0, 0, 0.5);}
+@keyframes rainbow {
+    0% {background-color: red;}
+    10% {background-color: orange;}
+    20% {background-color: yellow;}
+    30% {background-color: yellowgreen;}
+    40% {background-color: green;}
+    50% {background-color: skyblue;}
+    60% {background-color: blue;}
+    70% {background-color: purple;}
+    80% {background-color: violet;}
+    90% {background-color: pink;}
+    100% {background-color: gray;}
 }
 
 /*------ Utills --*/
@@ -61,12 +70,7 @@ h3.heading {
 }
 
 #home {
-    animation: bganime 1s ease 0s infinite alternate;
-}
-
-@keyframes bganime {
-    0% {background-color: rgba(0, 0, 0, 0.2)!important;}
-    100% {background-color: rgba(0, 0, 0, 0.5);}
+    animation: rainbow 8s ease 0s infinite alternate;
 }
 
 #home h1 {
@@ -107,6 +111,25 @@ h3.heading {
 
 .audio_button {
     cursor: pointer;
+}
+
+/*-- ToTop --*/
+#up {
+    float: right;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 5vw;
+    top: 90vh;
+}
+
+#up a {
+    font-size: 3rem;
+    color: white;
+}
+
+#up a:hover {
+    color: black;
 }
 
 /*-- About Section --*/
@@ -204,10 +227,29 @@ h3.heading {
 
 /*-- Thanks Section --*/
 #thanks {
-    background-color: rgba(0, 0, 0, 0.9)!important;
+    background-color: rgba(0, 0, 0, 0.9);
     color: white;
     padding: 10rem 0;
     margin: 5rem 15rem;
+}
+
+#thanks {
+    animation: thanksanime 3s ease 0s infinite alternate;
+}
+
+@keyframes thanksanime {
+    0% {
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+    50% {
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+    75% {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    100% {
+        background-color: rgba(0, 0, 0, 0);
+    }
 }
 
 .thanks {
@@ -232,7 +274,7 @@ h3.heading {
 }
 
 .copyright:hover {
-    color: red;
+    color: black;
 }
 
 /*-- Media Queries --*/
