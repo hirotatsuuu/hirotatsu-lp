@@ -10,12 +10,12 @@ body {
 }
 
 body {
-    animation: bodyanime 1s ease 1s infinite alternate;
+    animation: bodyanime 3s ease 1s infinite alternate;
 }
 
 @keyframes bodyanime {
     0% {background-color: white!important;}
-    100% {background-color: rgba(0, 0, 0, 0.3);}
+    100% {background-color: rgba(0, 0, 0, 0.5);}
 }
 
 /*------ Utills --*/
@@ -61,12 +61,12 @@ h3.heading {
 }
 
 #home {
-    animation: bganime 3s ease 0s infinite alternate;
+    animation: bganime 1s ease 0s infinite alternate;
 }
 
 @keyframes bganime {
-    0% {background-color: rgba(0, 0, 0, 0.3)!important;}
-    100% {background-color: rgba(0, 0, 0, 1);}
+    0% {background-color: rgba(0, 0, 0, 0.2)!important;}
+    100% {background-color: rgba(0, 0, 0, 0.5);}
 }
 
 #home h1 {
@@ -80,10 +80,6 @@ h3.heading {
 }
 
 .down a:hover {
-    color: red!important;
-}
-
-#home h1:hover {
     color: red!important;
 }
 
@@ -215,7 +211,6 @@ h3.heading {
 }
 
 .thanks a {
-    font-size: 10rem;
     color: red;
 }
 
@@ -226,7 +221,7 @@ h3.heading {
 
 /*-- Footer Section --*/
 #footer {
-    background-color: rgba(0, 0, 0, 1)!important;
+    background-color: rgb(0, 0, 0, 1)!important;
     color: white;
     padding: 2rem;
     margin: 10rem 0 0;
@@ -264,12 +259,21 @@ h3.heading {
     }
 }
 
+@media (max-width: 768px) {
+    .navbar {
+        position: relative;
+    }
+    .navbar {
+        display: none;
+    }
+    .down {
+        display: none;
+    }
+}
+
 @media (max-width: 680px) {
     #home h1 {
         font-size: 3rem;
-    }
-    .navbar {
-        position: relative;
     }
     .thanks {
         font-size: 3rem;
@@ -285,12 +289,6 @@ h3.heading {
     }
     .price {
         padding: 0;
-    }
-    .navbar {
-        display: none;
-    }
-    .down {
-        display: none;
     }
 }
 
