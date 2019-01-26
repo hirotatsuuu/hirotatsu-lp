@@ -105,6 +105,10 @@ h3.heading {
     color: black;
 }
 
+.audio_button {
+    cursor: pointer;
+}
+
 /*-- About Section --*/
 #about {
     background-color: rgba(0, 0, 0, 0.4)!important;
