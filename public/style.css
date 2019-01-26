@@ -270,12 +270,25 @@ h3.heading {
 @media (max-width: 768px) {
     .navbar {
         position: relative;
-    }
-    .navbar {
         display: none;
     }
     .down {
         display: none;
+    }
+    .detail {
+        padding: 3rem 0 0;
+    }
+    .skill {
+        padding: 0;
+    }
+    .policy {
+        padding: 0;
+    }
+    .price {
+        padding: 0;
+    }
+    .btn-secondary {
+        width: 15rem;
     }
 }
 
@@ -285,18 +298,6 @@ h3.heading {
     }
     .thanks {
         font-size: 3rem;
-    }
-    .detail {
-        padding: 3rem 0;
-    }
-    .btn-secondary {
-        width: 80vw;
-    }
-    .skill {
-        padding: 0;
-    }
-    .price {
-        padding: 0;
     }
 }
 
