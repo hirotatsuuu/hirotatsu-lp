@@ -241,14 +241,21 @@ h3.heading {
     0% {
         background-color: rgba(0, 0, 0, 0.9);
     }
+    25% {
+        background-color: rgba(0, 0, 0, 0.8);
+        border-top-left-radius: 300px;
+    }
     50% {
         background-color: rgba(0, 0, 0, 0.6);
+        border-top-right-radius: 300px;
     }
     75% {
         background-color: rgba(0, 0, 0, 0.3);
+        border-bottom-left-radius: 300px;
     }
     100% {
         background-color: rgba(0, 0, 0, 0);
+        border-bottom-right-radius: 300px;
     }
 }
 
