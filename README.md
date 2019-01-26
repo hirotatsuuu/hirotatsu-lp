@@ -1,4 +1,4 @@
-hirotatsu-lp
+htlp
 ============================
 
 ## Requirements
@@ -25,6 +25,9 @@ firebase serve
 ```
 firebase deploy
 ```
+
+## Domain
+https://htpl.work
 
 ## Reference
 - https://getbootstrap.com/
