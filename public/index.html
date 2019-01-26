@@ -8,14 +8,14 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="bootstrap-4.2.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="js/smooth-scroll.min.js"></script>
 </head>
 <body data-spy="scroll" data-target="#navbarResponsive">
 
     <!-- Start Home Section -->
     <div id="home">
-        <div class="text-center">
-            <h1>hirotatsu</h1>
+        <div class="text-center hirotasu">
+            <h1 id="hirotatsu">hirotatsu</h1>
         </div>
         <div class="down text-center">
             <a href="#about"><i class="fas fa-angle-down"></i></a>
@@ -40,6 +40,9 @@
                     <a data-scroll class="nav-link" href="#skills">Skills</a>
                 </li>
                 <li class="nav-item">
+                    <a data-scroll class="nav-link" href="#policy">Policy</a>
+                </li>
+                <li class="nav-item">
                     <a data-scroll class="nav-link" href="#price">Price</a>
                 </li>
                 <li class="nav-item">
@@ -57,7 +60,12 @@
             <div class="text-center">
                 <img src="img/about.png" alt="">
                 <div class="detail">
-                    ひろたつ。1994年12月8日東京生まれ。大学卒業後、新卒で都内のIT企業にエンジニアとして入社。退職後はヒッチハイクで日本一周を達成。翌月からニュージーランドで「ゼロ円ワーホリ」という活動を始める。現在は「世界のひろたつから」というサイトを運営しながら世界を旅している。2019年からフリーランスエンジニアとしてプログラミングを再開。
+                    ひろたつ。1994年12月8日東京生まれ。大学卒業後、新卒で都内のIT企業にエンジニアとして入社。退職後はヒッチハイクで日本一周。翌月からニュージーランドで「ゼロ円ワーホリ」という活動を始める。「世界のひろたつから」というサイトを運営しながら世界を旅している。2019年からフリーランスエンジニアとして活動を開始。
+                </div>
+                <div class="sns">
+                    <a href="https://twitter.com/hirotatsuuu" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/hirotatsuuuu" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/tatsuya.hirota.735" target="_blank"><i class="fab fa-facebook-square"></i></a>
                 </div>
                 <a href="https://hirotatsu.me" target="_blank" class="btn btn-secondary">BLOG</a>
             </div>
@@ -70,11 +78,25 @@
         <div class="container text-center">
             <h3 class="heading">Skills</h3>
             <div class="skill">
-                HTML5 / CSS3 / Bootstrap4 / JavaScript / Vue / React / PHP / Laravel / Java / Spring boot / Python / Cordova / WordPress / Git / AWS / Firebase / MySQL / Slack / GAS / VSCode /
+                HTML5 / CSS3 / Bootstrap4 / JavaScript / Vue / React / PHP / Laravel / Java / Spring boot / Python / Cordova / WordPress / Git / AWS / Firebase / MySQL / Slack / GAS / VSCode / etc..
             </div>
+            <a href="#policy" class="btn btn-secondary">POLICY</a>
         </div>
     </div>
     <!-- End Skills Section -->
+
+    <!-- Start Policy Section -->
+    <div id="policy" class="offset">
+        <div class="container text-center">
+            <h3 class="heading">Policy</h3>
+                <div class="policy">
+                    私が作るLP及びサイトは、現代の流行に沿いレスポンシブ化はもちろんのこと、よりクリエイティブで先進的なデザインを追い求め、私の知見及びモノ創りへの愛を製品に全て注ぎます。依頼者様と継続的にお付き合いができるように心がけます。
+                </div>
+                <a href="#price" class="btn btn-secondary">PRICE</a>
+            </div>
+        </div>
+    </div>
+    <!-- End About Section -->
 
     <!-- Start Price Section -->
     <div id="price" class="offset">
@@ -84,16 +106,20 @@
                 <table class="table table-borderless">
                     <tbody>
                         <tr>
-                        <th scope="row">LP制作</th>
-                        <td>10000円</td>
+                            <th scope="row">LP制作</th>
+                            <td>10000円〜</td>
                         </tr>
                         <tr>
-                        <th scope="row">WEBサイト制作</th>
-                        <td>30000円</td>
+                            <th scope="row">WEBサイト制作</th>
+                            <td>30000円〜</td>
                         </tr>
                         <tr>
-                        <th scope="row">その他</th>
-                        <td>ご相談ください</td>
+                            <th scope="row">既存の修正及び機能追加</th>
+                            <td>1000円〜</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">その他</th>
+                            <td>ご相談ください</td>
                         </tr>
                     </tbody>
                 </table>
@@ -112,6 +138,7 @@
             <p>hirotatsuuu@gmail.com</p>
             <a href="https://twitter.com/hirotatsuuu" target="_blank"><i class="fab fa-twitter-square"></i></a>
             <a href="https://www.instagram.com/hirotatsuuuu" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/tatsuya.hirota.735" target="_blank"><i class="fab fa-facebook-square"></i></a>
         </div>
     </div>
     <!-- End Contact Section -->
@@ -136,7 +163,7 @@
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="bootstrap-4.2.1-dist/js/bootstrap.min.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js"></script>
-    <script src="js/main.js"></script>
+    <script src="main.js"></script>
     <!-- End of Script Source Files -->
 </body>
 </html>

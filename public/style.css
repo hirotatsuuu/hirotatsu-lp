@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700');
 
-/*------ Utills --*/
+/*------ Body --*/
 body {
     overflow-x: hidden;
     font-family: 'Lato', sans-serif;
@@ -9,6 +9,16 @@ body {
     margin: 0;
 }
 
+body {
+    animation: bodyanime 1s ease 1s infinite alternate;
+}
+
+@keyframes bodyanime {
+    0% {background-color: white!important;}
+    100% {background-color: rgba(0, 0, 0, 0.3);}
+}
+
+/*------ Utills --*/
 .offset:before {
     display: block;
     content: "";
@@ -50,6 +60,15 @@ h3.heading {
     margin-bottom: 5rem;
 }
 
+#home {
+    animation: bganime 1s ease 1s infinite alternate;
+}
+
+@keyframes bganime {
+    0% {background-color: rgba(0, 0, 0, 0.3)!important;}
+    100% {background-color: black;}
+}
+
 #home h1 {
     padding-top: 20rem;
     font-size: 10rem;
@@ -61,7 +80,7 @@ h3.heading {
 }
 
 .down a:hover {
-    color: rgba(0, 0, 0, 0.5)!important;
+    color: red!important;
 }
 
 /*------ Navigation Section --*/
@@ -100,7 +119,19 @@ h3.heading {
 }
 
 .detail {
-    padding: 3rem 20vw;
+    padding: 3rem 20vw 0;
+}
+
+.sns a {
+    color: white;
+}
+.sns svg.svg-inline--fa {
+    font-size: 3rem;
+    margin: 1.2rem .5rem 0 0;
+}
+
+.sns svg.svg-inline--fa:hover {
+    color: rgba(0, 0, 0, 0.5)!important;
 }
 
 /*-- Skills Section --*/
@@ -115,24 +146,36 @@ h3.heading {
     padding: 0 20vw 5rem;
 }
 
-/*-- Price Section --*/
-#price {
+/*-- Policy Section --*/
+#policy {
     background-color: rgba(0, 0, 0, 0.6)!important;
     color: white;
     padding: 5rem 0;
     margin: 10rem 15rem;
 }
 
-.price {
+.policy {
     padding: 0 20vw 5rem;
+}
+
+/*-- Price Section --*/
+#price {
+    background-color: rgba(0, 0, 0, 0.7)!important;
+    color: white;
+    padding: 5rem 0;
+    margin: 10rem 20rem;
+}
+
+.price {
+    padding: 0 8rem 5rem;
 }
 
 /*-- Contact Section --*/
 #contact {
-    background-color: rgba(0, 0, 0, 0.7)!important;
+    background-color: rgba(0, 0, 0, 0.8)!important;
     color: white;
     padding: 5rem 0 10rem;
-    margin: 10rem 20rem;
+    margin: 10rem 25rem;
 }
 
 #contact img {
@@ -151,15 +194,15 @@ h3.heading {
 }
 
 #contact svg.svg-inline--fa:hover {
-    color: #1ebba3!important;
+    color: rgba(0, 0, 0, 0.5)!important;
 }
 
 /*-- Thanks Section --*/
 #thanks {
-    background-color: rgba(0, 0, 0, 0.8)!important;
+    background-color: rgba(0, 0, 0, 0.9)!important;
     color: white;
     padding: 10rem 0;
-    margin: 5rem 25rem;
+    margin: 5rem 15rem;
 }
 
 .thanks {
@@ -168,10 +211,10 @@ h3.heading {
 
 /*-- Footer Section --*/
 #footer {
-    background-color: rgba(0, 0, 0, 0.9)!important;
+    background-color: rgba(0, 0, 0, 1)!important;
     color: white;
     padding: 2rem;
-    margin: 10rem 30rem 0;
+    margin: 10rem 0 0;
 }
 
 /*-- Media Queries --*/
@@ -183,6 +226,10 @@ h3.heading {
     #skills {
         padding: 5rem 0 10rem;
         margin: 5rem 0;
+    }
+    #policy {
+        padding: 5rem 0;
+        margin: 5rem 0rem;
     }
     #price {
         padding: 5rem 0;
@@ -239,7 +286,7 @@ No media query since this is the default in Bootstrap
 Small (sm) devices (landscape phones, 576px and up)
 @media (min-width: 768px) { ... }
 
-Large (lg) devices (desktops, 992px and up)
+Large (lg) devices (deskt1ops, 992px and up)
 @media (min-width: 992px) { ... }
 
 Extra (xl) large devices (large desktops, 1200px and up)
