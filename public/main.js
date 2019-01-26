@@ -1,3 +1,7 @@
+// Hello World
+console.log('%cWELCOME TO CONSOLE', 'color: pink; font-size: 500%;')
+console.log('%ccreated by hirotatsu', 'color: pink; font-size: 300%;')
+
 // SmoothScroll
 var scroll = new SmoothScroll('a[href*="#"]', {
 	speed: 2000,
