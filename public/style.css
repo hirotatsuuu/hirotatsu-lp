@@ -80,7 +80,7 @@ h3.heading {
 }
 
 .down a:hover {
-    color: red!important;
+    color: rgba(0, 0, 0, 0.5);
 }
 
 /*------ Navigation Section --*/
@@ -205,7 +205,7 @@ h3.heading {
 /*-- Thanks Section --*/
 #thanks {
     background-color: rgba(0, 0, 0, 0.9)!important;
-    color: red;
+    color: white;
     padding: 10rem 0;
     margin: 5rem 15rem;
 }
@@ -215,11 +215,11 @@ h3.heading {
 }
 
 .thanks a {
-    color: red;
+    color: white;
 }
 
 .thanks a:hover {
-    color: white;
+    color: gray;
     text-decoration: none;
 }
 
@@ -229,6 +229,10 @@ h3.heading {
     color: white;
     padding: 2rem;
     margin: 10rem 0 0;
+}
+
+.copyright:hover {
+    color: red;
 }
 
 /*-- Media Queries --*/
