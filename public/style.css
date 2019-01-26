@@ -61,12 +61,12 @@ h3.heading {
 }
 
 #home {
-    animation: bganime 1s ease 1s infinite alternate;
+    animation: bganime 3s ease 0s infinite alternate;
 }
 
 @keyframes bganime {
     0% {background-color: rgba(0, 0, 0, 0.3)!important;}
-    100% {background-color: black;}
+    100% {background-color: rgba(0, 0, 0, 1);}
 }
 
 #home h1 {
@@ -80,6 +80,10 @@ h3.heading {
 }
 
 .down a:hover {
+    color: red!important;
+}
+
+#home h1:hover {
     color: red!important;
 }
 
@@ -208,6 +212,16 @@ h3.heading {
 
 .thanks {
     font-size: 10rem;
+}
+
+.thanks a {
+    font-size: 10rem;
+    color: red;
+}
+
+.thanks a:hover {
+    color: white;
+    text-decoration: none;
 }
 
 /*-- Footer Section --*/
