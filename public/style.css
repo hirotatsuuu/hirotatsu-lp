@@ -200,7 +200,7 @@ h3.heading {
 /*-- Thanks Section --*/
 #thanks {
     background-color: rgba(0, 0, 0, 0.9)!important;
-    color: white;
+    color: red;
     padding: 10rem 0;
     margin: 5rem 15rem;
 }
