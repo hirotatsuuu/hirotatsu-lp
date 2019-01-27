@@ -1,16 +1,18 @@
-// Hello World
+/*-- Start Hello World --*/
 console.log('%cHELLO WORLD', 'color: pink; font-size: 800%;')
 console.log('%cwelcome to console', 'color: pink; font-size: 500%;')
 console.log('%ccreated by hirotatsu', 'color: pink;')
+/*-- End Hello World --*/
 
-// SmoothScroll
+/*-- Start SmoothScroll --*/
 var scroll = new SmoothScroll('a[href*="#"]', {
 	speed: 2000,
     updateURL: false,
 	speedAsDuration: true
 });
+/*-- End SmoothScroll --*/
 
-// audio
+/*-- Start Audio --*/
 $(function () {
     // play and pause
     var audioBtn = $('.audio_button'),
@@ -40,9 +42,18 @@ $(function () {
         audio.pause();
         audioWrap.removeClass('play');
     });
-});
 
-// language
+    document.addEventListener('visibilitychange', function () {
+        if (document.visibilityState == 'hidden') {
+            audio.pause();
+        } else if (document.visibilityState === 'visible') {
+            audio.play();
+        }
+    }, false);
+});
+/*-- End Audio --*/
+
+/*-- Start Language --*/
 document.getElementById("en_detail").style.display = "block";
 document.getElementById("ja_detail").style.display = "none";
 
@@ -64,6 +75,7 @@ function enClick (target) {
         jaPolicy.style.display = "none";
     }
 };
+
 function jaClick (target) {
     if (target == "detail") {
         var enDetail = document.getElementById("en_detail");
@@ -78,5 +90,5 @@ function jaClick (target) {
         enPolicy.style.display = "none";
         jaPolicy.style.display = "block";
     }
-
 };
+/*-- End Language --*/

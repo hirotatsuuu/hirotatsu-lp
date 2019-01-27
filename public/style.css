@@ -71,10 +71,6 @@ h3.heading {
     font-size: 1rem;
 }
 
-.lang_btn:hover {
-    color: gray;
-}
-
 /*-- Home Section --*/
 #home {
     height: 100vh;
@@ -248,32 +244,6 @@ h3.heading {
     margin: 5rem 15rem;
 }
 
-#thanks {
-    animation: thanksanime 3s ease 0s infinite alternate;
-}
-
-@keyframes thanksanime {
-    0% {
-        background-color: rgba(0, 0, 0, 0.9);
-    }
-    25% {
-        background-color: rgba(0, 0, 0, 0.8);
-        border-top-left-radius: 300px;
-    }
-    50% {
-        background-color: rgba(0, 0, 0, 0.6);
-        border-top-right-radius: 300px;
-    }
-    75% {
-        background-color: rgba(0, 0, 0, 0.3);
-        border-bottom-left-radius: 300px;
-    }
-    100% {
-        background-color: rgba(0, 0, 0, 0);
-        border-bottom-right-radius: 300px;
-    }
-}
-
 .thanks {
     font-size: 10rem;
 }
@@ -298,6 +268,60 @@ h3.heading {
 .copyright:hover {
     color: black;
 }
+
+@media (min-width: 769px) {
+    /*-- Animation --*/
+    #about {
+        animation: radiusAnime1 3s ease 0s infinite alternate;
+    }
+    #skills {
+        animation: radiusAnime2 3s ease 0s infinite alternate;
+    }
+    #policy {
+        animation: radiusAnime3 3s ease 0s infinite alternate;
+    }
+    #price {
+        animation: radiusAnime4 3s ease 0s infinite alternate;
+    }
+    #contact {
+        animation: radiusAnime5 3s ease 0s infinite alternate;
+    }
+    #thanks {
+        animation: aaa 3s ease 0s infinite alternate;
+    }
+
+    @keyframes radiusAnime1 {
+        25% {border-top-left-radius: 30rem;}
+        50% {border-top-right-radius: 30rem;}
+        75% {border-bottom-left-radius: 30rem;}
+        100% {border-bottom-right-radius: 30rem;}
+    }
+    @keyframes radiusAnime2 {
+        0% {border-top-left-radius: 25rem;}
+        25% {border-top-right-radius: 25rem;}
+        50% {border-bottom-left-radius: 25rem;}
+        75% {border-bottom-right-radius: 25rem;}
+    }
+    @keyframes radiusAnime3 {
+        0% {border-top-right-radius: 20rem;}
+        25% {border-bottom-left-radius: 20rem;}
+        50% {border-bottom-right-radius: 20rem;}
+        100% {border-top-left-radius: 20rem;}
+    }
+    @keyframes radiusAnime4 {
+        0% {border-bottom-left-radius: 15rem;}
+        25% {border-bottom-right-radius: 15rem;}
+        75% {border-top-left-radius: 15rem;}
+        100% {border-top-right-radius: 15rem;}
+    }
+    @keyframes radiusAnime5 {
+        0% {border-bottom-right-radius: 10rem;}
+        50% {border-top-left-radius: 10rem;}
+        75% {border-top-right-radius: 10rem;}
+        100% {border-bottom-left-radius: 10rem;}
+    }
+}
+
 
 /*-- Media Queries --*/
 @media (max-width: 1312px) {
