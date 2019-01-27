@@ -5,7 +5,13 @@ htlp
 - firebase-tools 6.3.0
 
 ## First
-- `firebase-tools`のインストール
+- Install `yarn`
+
+```
+brew install yarn
+```
+
+- Install `firebase-tools`
 
 ```
 yarn global add firebase-tools
@@ -13,14 +19,14 @@ yarn global add firebase-tools
 
 
 ## Devlopment
-- `http://localhost:5000`でローカルサーバを起動
+- Access to `http://localhost:5000`
 
 ```
 firebase serve
 ```
 
 ## Deploy
-- FirebaseにHosting
+- Hosting to Firebase
 
 ```
 firebase deploy
