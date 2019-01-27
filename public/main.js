@@ -45,3 +45,41 @@ $(function () {
     });
 });
 
+// language
+document.getElementById("en_detail").style.display = "block";
+document.getElementById("ja_detail").style.display = "none";
+
+document.getElementById("en_policy").style.display = "block";
+document.getElementById("ja_policy").style.display = "none";
+
+function enClick (target) {
+    if (target == "detail") {
+        var enDetail = document.getElementById("en_detail");
+        var jaDetail = document.getElementById("ja_detail");
+
+        enDetail.style.display = "block";
+        jaDetail.style.display = "none";
+    } else if (target == "policy") {
+        var enPolicy = document.getElementById("en_policy");
+        var jaPolicy = document.getElementById("ja_policy");
+
+        enPolicy.style.display = "block";
+        jaPolicy.style.display = "none";
+    }
+};
+function jaClick (target) {
+    if (target == "detail") {
+        var enDetail = document.getElementById("en_detail");
+        var jaDetail = document.getElementById("ja_detail");
+
+        enDetail.style.display = "none";
+        jaDetail.style.display = "block";
+    } else if (target == "policy") {
+        var enPolicy = document.getElementById("en_policy");
+        var jaPolicy = document.getElementById("ja_policy");
+
+        enPolicy.style.display = "none";
+        jaPolicy.style.display = "block";
+    }
+
+};

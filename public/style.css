@@ -60,6 +60,21 @@ h3.heading {
     color: white;
 }
 
+.lang_wrap {
+    margin-top: 1rem;
+}
+
+.lang_btn {
+    cursor: pointer;
+    color: white;
+    margin: .5rem;
+    font-size: 1rem;
+}
+
+.lang_btn:hover {
+    color: gray;
+}
+
 /*-- Home Section --*/
 #home {
     height: 100vh;
