@@ -140,7 +140,7 @@ h3.heading {
 }
 
 #up a:hover {
-    color: black;
+    color: gray;
 }
 
 /*-- About Section --*/
@@ -170,7 +170,7 @@ h3.heading {
 }
 
 .sns svg.svg-inline--fa:hover {
-    color: rgba(0, 0, 0, 0.5)!important;
+    color: gray;
 }
 
 /*-- Skills Section --*/
@@ -233,7 +233,7 @@ h3.heading {
 }
 
 #contact svg.svg-inline--fa:hover {
-    color: rgba(0, 0, 0, 0.5)!important;
+    color: gray;
 }
 
 /*-- Thanks Section --*/
@@ -272,53 +272,26 @@ h3.heading {
 @media (min-width: 769px) {
     /*-- Animation --*/
     #about {
-        animation: radiusAnime1 3s ease 0s infinite alternate;
+        animation: radiusAnime 3s ease 0s infinite alternate;
     }
     #skills {
         animation: radiusAnime2 3s ease 0s infinite alternate;
     }
     #policy {
-        animation: radiusAnime3 3s ease 0s infinite alternate;
+        animation: radiusAnime2 3s ease 0s infinite alternate;
     }
     #price {
-        animation: radiusAnime4 3s ease 0s infinite alternate;
+        animation: radiusAnime2 3s ease 0s infinite alternate;
     }
     #contact {
-        animation: radiusAnime5 3s ease 0s infinite alternate;
-    }
-    #thanks {
-        animation: aaa 3s ease 0s infinite alternate;
+        animation: radiusAnime2 3s ease 0s infinite alternate;
     }
 
-    @keyframes radiusAnime1 {
-        25% {border-top-left-radius: 30rem;}
-        50% {border-top-right-radius: 30rem;}
-        75% {border-bottom-left-radius: 30rem;}
-        100% {border-bottom-right-radius: 30rem;}
+    @keyframes radiusAnime {
+        0% {border-radius: 30rem;}
     }
     @keyframes radiusAnime2 {
-        0% {border-top-left-radius: 25rem;}
-        25% {border-top-right-radius: 25rem;}
-        50% {border-bottom-left-radius: 25rem;}
-        75% {border-bottom-right-radius: 25rem;}
-    }
-    @keyframes radiusAnime3 {
-        0% {border-top-right-radius: 20rem;}
-        25% {border-bottom-left-radius: 20rem;}
-        50% {border-bottom-right-radius: 20rem;}
-        100% {border-top-left-radius: 20rem;}
-    }
-    @keyframes radiusAnime4 {
-        0% {border-bottom-left-radius: 15rem;}
-        25% {border-bottom-right-radius: 15rem;}
-        75% {border-top-left-radius: 15rem;}
-        100% {border-top-right-radius: 15rem;}
-    }
-    @keyframes radiusAnime5 {
-        0% {border-bottom-right-radius: 10rem;}
-        50% {border-top-left-radius: 10rem;}
-        75% {border-top-right-radius: 10rem;}
-        100% {border-bottom-left-radius: 10rem;}
+        0% {border-radius: 20rem / 10rem;}
     }
 }
 
