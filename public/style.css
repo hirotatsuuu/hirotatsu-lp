@@ -28,7 +28,7 @@ body {
     70% {background-color: yellowgreen;}
     80% {background-color: skyblue;}
     90% {background-color: blue;}
-    100% {background-color: black;}
+    100% {background-color: darkblue;}
 }
 
 /*-- Utills --*/
@@ -95,7 +95,7 @@ h3.heading {
 }
 
 .down a:hover {
-    color: rgba(0, 0, 0, 0.5);
+    color: lightgray;
 }
 
 /*-- Navigation Section --*/
@@ -136,11 +136,11 @@ h3.heading {
 
 #up a {
     font-size: 3rem;
-    color: gray;
+    color: lightgray;
 }
 
 #up a:hover {
-    color: lightGray;
+    color: whitesmoke;
 }
 
 /*-- About Section --*/
@@ -253,7 +253,7 @@ h3.heading {
 }
 
 .thanks a:hover {
-    color: gray;
+    color: lightgray;
     text-decoration: none;
 }
 
@@ -265,7 +265,11 @@ h3.heading {
     margin: 10rem 0 0;
 }
 
-.copyright:hover {
+.copyright a {
+    color: white;
+}
+
+.copyright a:hover {
     color: black;
 }
 
