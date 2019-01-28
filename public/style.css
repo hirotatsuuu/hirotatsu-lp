@@ -136,11 +136,11 @@ h3.heading {
 
 #up a {
     font-size: 3rem;
-    color: white;
+    color: gray;
 }
 
 #up a:hover {
-    color: gray;
+    color: lightGray;
 }
 
 /*-- About Section --*/
