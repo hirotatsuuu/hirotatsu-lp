@@ -14,33 +14,57 @@ var scroll = new SmoothScroll('a[href*="#"]', {
 
 /*-- Start Audio --*/
 $(function () {
-    // play and pause
     var audioBtn = $('.audio_button'),
         audioWrap = $('.audio_wrap'),
-        audio = document.getElementById('audio');
+        audio = document.getElementById('audio'),
+        bg = document.getElementById('bg'),
+        home = document.getElementById('home'),
+        about = document.getElementById('about'),
+        skills = document.getElementById('skills'),
+        policy = document.getElementById('policy'),
+        price = document.getElementById('price'),
+        contact = document.getElementById('contact');
+
+    function playAudio () {
+        audio.play();
+        audioWrap.addClass('play');
+        bg.className = "animation";
+        home.className = "animation";
+        about.className = "animation";
+        skills.className = "animation";
+        policy.className = "animation";
+        price.className = "animation";
+        contact.className = "animation";
+    };
+
+    function pauseAudio () {
+        audio.pause();
+        audioWrap.removeClass('play');
+        bg.className = "";
+        home.className = "";
+        about.className = "";
+        skills.className = "";
+        policy.className = "";
+        price.className = "";
+        contact.className = "";
+    };
 
     audioBtn.on('click', function () {
         if( audioWrap.hasClass('play') ) {
-            audio.pause();
-            audioWrap.removeClass('play');
+            pauseAudio()
         } else {
-            audio.play();
-            audioWrap.addClass('play');
+            playAudio();
         }
     });
 
-    // only play
     var playBtn = $('.play_button');
     playBtn.on('click', function () {
-        audio.play();
-        audioWrap.addClass('play');
+        playAudio();
     });
 
-    // only pause
     var pauseBtn = $('.pause_button');
     pauseBtn.on('click', function () {
-        audio.pause();
-        audioWrap.removeClass('play');
+        pauseAudio();
     });
 
     document.addEventListener('visibilitychange', function () {

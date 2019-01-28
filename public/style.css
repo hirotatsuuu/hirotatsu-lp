@@ -9,22 +9,26 @@ body {
     margin: 0;
 }
 
-body {
+#bg.animation {
+    animation: rainbow 8s ease 0s infinite alternate;
+}
+
+#home.animation {
     animation: rainbow 8s ease 0s infinite alternate;
 }
 
 @keyframes rainbow {
-    0% {background-color: red;}
-    10% {background-color: orange;}
-    20% {background-color: yellow;}
-    30% {background-color: yellowgreen;}
-    40% {background-color: green;}
-    50% {background-color: skyblue;}
-    60% {background-color: blue;}
-    70% {background-color: purple;}
-    80% {background-color: violet;}
-    90% {background-color: pink;}
-    100% {background-color: gray;}
+    0% {background-color: rgba(0, 0, 0, 0.3)!important;}
+    10%{background-color: pink;}
+    20% {background-color: violet;}
+    30% {background-color: purple;}
+    40% {background-color: red;}
+    50% {background-color: orange;}
+    60% {background-color: yellow;}
+    70% {background-color: yellowgreen;}
+    80% {background-color: skyblue;}
+    90% {background-color: blue;}
+    100% {background-color: black;}
 }
 
 /*-- Utills --*/
@@ -78,10 +82,6 @@ h3.heading {
     background-color: rgba(0, 0, 0, 0.3)!important;
     color: white;
     margin-bottom: 5rem;
-}
-
-#home {
-    animation: rainbow 8s ease 0s infinite alternate;
 }
 
 #home h1 {
@@ -271,27 +271,27 @@ h3.heading {
 
 @media (min-width: 769px) {
     /*-- Animation --*/
-    #about {
+    #about.animation {
         animation: radiusAnime 3s ease 0s infinite alternate;
     }
-    #skills {
+    #skills.animation {
         animation: radiusAnime2 3s ease 0s infinite alternate;
     }
-    #policy {
+    #policy.animation {
         animation: radiusAnime2 3s ease 0s infinite alternate;
     }
-    #price {
+    #price.animation {
         animation: radiusAnime2 3s ease 0s infinite alternate;
     }
-    #contact {
+    #contact.animation {
         animation: radiusAnime2 3s ease 0s infinite alternate;
     }
 
     @keyframes radiusAnime {
-        0% {border-radius: 30rem;}
+        100% {border-radius: 30rem;}
     }
     @keyframes radiusAnime2 {
-        0% {border-radius: 20rem / 10rem;}
+        100% {border-radius: 20rem / 10rem;}
     }
 }
 
