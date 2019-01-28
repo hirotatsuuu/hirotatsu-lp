@@ -33,7 +33,7 @@ firebase deploy
 ```
 
 ## Domain
-https://htpl.work
+https://htlp.work
 
 ## Reference
 - https://getbootstrap.com/

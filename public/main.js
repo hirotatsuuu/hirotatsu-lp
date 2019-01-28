@@ -47,7 +47,9 @@ $(function () {
         if (document.visibilityState == 'hidden') {
             audio.pause();
         } else if (document.visibilityState === 'visible') {
-            audio.play();
+            if( audioWrap.hasClass('play') ) {
+                audio.play();
+            }
         }
     }, false);
 });
