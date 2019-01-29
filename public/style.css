@@ -109,6 +109,7 @@ h3.heading {
     font-size: .9rem;
     letter-spacing: .1rem;
     background: rgba(0, 0, 0, 0)!important;
+    margin-top: 5rem;
 }
 
 .navbar-nav li {
