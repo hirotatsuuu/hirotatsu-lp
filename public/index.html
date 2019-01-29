@@ -65,170 +65,176 @@
                 <h1>hirotatsu</h1>
             </div>
             <div class="down text-center play_button">
-                <a href="#about"><i class="fas fa-angle-down"></i></a>
+                <a href="#about" onclick="downClick()"><i class="fas fa-angle-down"></i></a>
             </div>
         </div>
         <!-- End Home Section -->
 
-        <!-- Start Navigation -->
-        <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a data-scroll class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a data-scroll class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a data-scroll class="nav-link" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a data-scroll class="nav-link" href="#policy">Policy</a>
-                    </li>
-                    <li class="nav-item">
-                        <a data-scroll class="nav-link" href="#price">Price</a>
-                    </li>
-                    <li class="nav-item">
-                        <a data-scroll class="nav-link" href="#contact">Contact</a>
-                    </li>
-                    <li class="nav-item audio_button">
-                        <span class="nav-link">BGM</span>
-                    </li>
-                </ul>
-            </div>
-            <div id="up" class="pause_button">
-                <a data-scroll href="#home"><i class="fas fa-angle-up"></i></a>
-            </div>
-        </nav>
-        <!-- End Navigation -->
+        <!-- Start Contents-->
+        <div id="contents">
 
-        <!-- Start About Section -->
-        <div id="about" class="offset">
-            <div class="container text-center">
-                <h3 class="heading">About</h3>
-                <div class="text-center">
-                    <img src="img/about.png" alt="">
-                    <div class="detail">
-                        <span id="en_detail">
-                            Hirotatsu. Born on Dec 8 in 1994. I'm from Tokyo. After graduating from university, I joined the company in Tokyo as an engineer with a new graduate. I experienced in WEB application development and education for new employees for engineer. After quitment, I work as a freelance engineer while traveling the world with hitchhiking and volunteer. I'm a manager of  "From Hirotatsu of the World".
-                        </span>
-                        <span id="ja_detail">
-                            ひろたつ。1994年12月8日生まれ。東京出身。大学卒業後、新卒で都内のIT企業にエンジニアとして入社。WEBアプリ開発や新入社員への教育等の実務を経験。退職後はヒッチハイクやボランディアで世界を旅しながらフリーランスエンジニアとして活動中。「世界のひろたつから」の管理人。
-                        </span>
-                        <div class="lang_wrap">
-                            <span class="lang_btn" onclick="enClick('detail')">en</span>/<span class="lang_btn" onclick="jaClick('detail')">ja</span>
+            <!-- Start Navigation -->
+            <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a data-scroll class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a data-scroll class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a data-scroll class="nav-link" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a data-scroll class="nav-link" href="#policy">Policy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a data-scroll class="nav-link" href="#price">Price</a>
+                        </li>
+                        <li class="nav-item">
+                            <a data-scroll class="nav-link" href="#contact">Contact</a>
+                        </li>
+                        <li class="nav-item audio_button">
+                            <span class="nav-link">BGM</span>
+                        </li>
+                    </ul>
+                </div>
+                <div id="up" class="pause_button">
+                    <a data-scroll href="#home"><i class="fas fa-angle-up"></i></a>
+                </div>
+            </nav>
+            <!-- End Navigation -->
+
+            <!-- Start About Section -->
+            <div id="about" class="offset">
+                <div class="container text-center">
+                    <h3 class="heading">About</h3>
+                    <div class="text-center">
+                        <img src="img/about.png" alt="">
+                        <div class="detail">
+                            <span id="en_detail">
+                                Hirotatsu. Born on Dec 8 in 1994. I'm from Tokyo. After graduating from university, I joined the company in Tokyo as an engineer with a new graduate. I experienced in WEB application development and education for new employees for engineer. After quitment, I work as a freelance engineer while traveling the world with hitchhiking and volunteer. I'm a manager of  "From Hirotatsu of the World".
+                            </span>
+                            <span id="ja_detail">
+                                ひろたつ。1994年12月8日生まれ。東京出身。大学卒業後、新卒で都内のIT企業にエンジニアとして入社。WEBアプリ開発や新入社員への教育等の実務を経験。退職後はヒッチハイクやボランディアで世界を旅しながらフリーランスエンジニアとして活動中。「世界のひろたつから」の管理人。
+                            </span>
+                            <div class="lang_wrap">
+                                <span class="lang_btn" onclick="enClick('detail')">en</span>/<span class="lang_btn" onclick="jaClick('detail')">ja</span>
+                            </div>
+                        </div>
+                        <div class="sns">
+                            <a href="https://twitter.com/hirotatsuuu" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                            <a href="https://www.instagram.com/hirotatsuuuu" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://hirotatsu.me" target="_blank"><i class="fas fa-globe-asia"></i></a>
                         </div>
                     </div>
-                    <div class="sns">
-                        <a href="https://twitter.com/hirotatsuuu" target="_blank"><i class="fab fa-twitter-square"></i></a>
-                        <a href="https://www.instagram.com/hirotatsuuuu" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="https://hirotatsu.me" target="_blank"><i class="fas fa-globe-asia"></i></a>
+                </div>
+            </div>
+            <!-- End About Section -->
+
+            <!-- Start Skills Section -->
+            <div id="skills" class="offset">
+                <div class="container text-center">
+                    <h3 class="heading">Skills</h3>
+                    <div class="skill">
+                        HTML5 / CSS3 / Bootstrap4 / JavaScript / Vue / React / PHP / Laravel / Java / Spring Boot / Python / MySQL / WordPress / Cordova / Firebase / AWS / GAS / Git / Slack / VSCode / etc..
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- End About Section -->
+            <!-- End Skills Section -->
 
-        <!-- Start Skills Section -->
-        <div id="skills" class="offset">
-            <div class="container text-center">
-                <h3 class="heading">Skills</h3>
-                <div class="skill">
-                    HTML5 / CSS3 / Bootstrap4 / JavaScript / Vue / React / PHP / Laravel / Java / Spring Boot / Python / MySQL / WordPress / Cordova / Firebase / AWS / GAS / Git / Slack / VSCode / etc..
-                </div>
-            </div>
-        </div>
-        <!-- End Skills Section -->
-
-        <!-- Start Policy Section -->
-        <div id="policy" class="offset">
-            <div class="container text-center">
-                <h3 class="heading">Policy</h3>
-                <div class="policy">
-                    <span id="en_policy">
-                            In the production, pursue more creative and advanced designs as well as response responsive to contemporary trends, I will pour all my love of knowledge and creation of things. I will keep in mind that I can continue to associate with the client.
-                    </span>
-                    <span id="ja_policy">
-                        制作物には、現代の流行に沿ったレスポンシブ化はもちろんのこと、よりクリエイティブで先進的なデザインを追い求め、私の持つ知見及びモノ創りへの愛を全て注ぎます。依頼者様と継続的なお付き合いが出来るように心掛けます。
-                    </span>
-                    <div class="lang_wrap">
-                        <span class="lang_btn" onclick="enClick('policy')">en</span>/<span class="lang_btn" onclick="jaClick('policy')">ja</span>
+            <!-- Start Policy Section -->
+            <div id="policy" class="offset">
+                <div class="container text-center">
+                    <h3 class="heading">Policy</h3>
+                    <div class="policy">
+                        <span id="en_policy">
+                                In the production, pursue more creative and advanced designs as well as response responsive to contemporary trends, I will pour all my love of knowledge and creation of things. I will keep in mind that I can continue to associate with the client.
+                        </span>
+                        <span id="ja_policy">
+                            制作物には、現代の流行に沿ったレスポンシブ化はもちろんのこと、よりクリエイティブで先進的なデザインを追い求め、私の持つ知見及びモノ創りへの愛を全て注ぎます。依頼者様と継続的なお付き合いが出来るように心掛けます。
+                        </span>
+                        <div class="lang_wrap">
+                            <span class="lang_btn" onclick="enClick('policy')">en</span>/<span class="lang_btn" onclick="jaClick('policy')">ja</span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- End About Section -->
+            <!-- End About Section -->
 
-        <!-- Start Price Section -->
-        <div id="price" class="offset">
-            <div class="container text-center">
-                <h3 class="heading">Price</h3>
-                <div class="price">
-                    <table class="table table-borderless">
-                        <tbody>
-                            <tr>
-                                <th scope="row">LP</th>
-                                <td>5000yen~</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">WEB Site</th>
-                                <td>10000yen~</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">WEB Application</th>
-                                <td>10000yen~</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Update or Add</th>
-                                <td>1000yen~</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Others</th>
-                                <td>contact me..</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <a href="#contact" class="btn btn-secondary">CONTACT</a>
+            <!-- Start Price Section -->
+            <div id="price" class="offset">
+                <div class="container text-center">
+                    <h3 class="heading">Price</h3>
+                    <div class="price">
+                        <table class="table table-borderless">
+                            <tbody>
+                                <tr>
+                                    <th scope="row">LP</th>
+                                    <td>5000yen~</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">WEB Site</th>
+                                    <td>10000yen~</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">WEB Application</th>
+                                    <td>10000yen~</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Update or Add</th>
+                                    <td>1000yen~</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Others</th>
+                                    <td>contact me..</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a href="#contact" class="btn btn-secondary">CONTACT</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- End Price Section -->
+            <!-- End Price Section -->
 
-        <!-- Start Contact Section -->
-        <div id="contact" class="offset">
-            <div class="container text-center">
-                <h3 class="heading">Contact</h3>
-                <img src="img/hirotatsu.png" alt="">
-                <p class="lead">hirotatsu</p>
-                <p>hirotatsuuu@gmail.com</p>
-                <a href="https://twitter.com/hirotatsuuu" target="_blank"><i class="fab fa-twitter-square"></i></a>
-                <a href="https://www.instagram.com/hirotatsuuuu" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://hirotatsu.me" target="_blank"><i class="fas fa-globe-asia"></i></a>
-            </div>
-        </div>
-        <!-- End Contact Section -->
-
-        <!-- Start Thanks Section -->
-        <div id="thanks" class="offset">
-            <div class="container text-center">
-                <div class="thanks pause_button">
-                    <a href="#home">thanks</a>
+            <!-- Start Contact Section -->
+            <div id="contact" class="offset">
+                <div class="container text-center">
+                    <h3 class="heading">Contact</h3>
+                    <img src="img/hirotatsu.png" alt="">
+                    <p class="lead">hirotatsu</p>
+                    <p>hirotatsuuu@gmail.com</p>
+                    <a href="https://twitter.com/hirotatsuuu" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/hirotatsuuuu" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://hirotatsu.me" target="_blank"><i class="fas fa-globe-asia"></i></a>
                 </div>
             </div>
-        </div>
-        <!-- End Thanks Section -->
+            <!-- End Contact Section -->
 
-        <!-- Start Footer Section -->
-        <div id="footer">
-            <div class="text-center">
-                <span class="copyright"><a href="https://github.com/hirotatsuuu/htlp" target="_blank">&copy; 2019 hirotatsu</a></span>
+            <!-- Start Thanks Section -->
+            <div id="thanks" class="offset">
+                <div class="container text-center">
+                    <div class="thanks pause_button">
+                        <a href="#home">thanks</a>
+                    </div>
+                </div>
             </div>
+            <!-- End Thanks Section -->
+
+            <!-- Start Footer Section -->
+            <div id="footer">
+                <div class="text-center">
+                    <span class="copyright"><a href="https://github.com/hirotatsuuu/htlp" target="_blank">&copy; 2019 hirotatsu</a></span>
+                </div>
+            </div>
+            <!-- End Footer Section -->
+
         </div>
-        <!-- End Footer Section -->
+        <!-- End Contents-->
 
     </div>
     <!-- End Background-->

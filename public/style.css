@@ -19,7 +19,7 @@ body {
 
 /*-- Pace --*/
 #bg {
-    display:none;
+    display: none;
 }
 
 @keyframes rainbow {
@@ -86,7 +86,6 @@ h3.heading {
     width: 100vw;
     background-color: rgba(0, 0, 0, 0.3)!important;
     color: white;
-    margin-bottom: 5rem;
 }
 
 #home h1 {
@@ -359,6 +358,12 @@ h3.heading {
     }
     .btn-secondary {
         width: 15rem;
+    }
+}
+
+@media (min-width: 769px) {
+    #contents {
+        display: none;
     }
 }
 

@@ -18,6 +18,12 @@ Pace.on('done', function(){
 });
 /*-- End Pace --*/
 
+/*-- Start Contents --*/
+function downClick () {
+    document.getElementById('contents').style.display = "block";
+};
+/*-- End Contents --*/
+
 /*-- Start Audio --*/
 $(function () {
     var audioBtn = $('.audio_button'),
