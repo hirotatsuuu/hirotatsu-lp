@@ -39,3 +39,4 @@ https://htlp.work
 - https://getbootstrap.com/
 - https://fontawesome.com/
 - https://github.com/cferdinandi/smooth-scroll
+- https://github.com/HubSpot/pace

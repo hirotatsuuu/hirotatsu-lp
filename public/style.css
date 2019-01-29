@@ -17,6 +17,11 @@ body {
     animation: rainbow 8s ease 0s infinite alternate;
 }
 
+/*-- Pace --*/
+#bg {
+    display:none;
+}
+
 @keyframes rainbow {
     0% {background-color: rgba(0, 0, 0, 0.3)!important;}
     10%{background-color: pink;}

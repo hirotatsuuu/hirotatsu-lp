@@ -12,6 +12,12 @@ var scroll = new SmoothScroll('a[href*="#"]', {
 });
 /*-- End SmoothScroll --*/
 
+/*-- Start Pace --*/
+Pace.on('done', function(){
+    $('#bg').fadeIn();
+});
+/*-- End Pace --*/
+
 /*-- Start Audio --*/
 $(function () {
     var audioBtn = $('.audio_button'),
