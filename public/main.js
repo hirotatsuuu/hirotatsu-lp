@@ -18,6 +18,14 @@ Pace.on('done', function(){
 });
 /*-- End Pace --*/
 
+/*-- Start Ripples --*/
+$("#home").ripples({
+    resolution: 712,
+    dropRadius: 30,
+    perturbance: 0.04
+});
+/*-- End Ripples --*/
+
 /*-- Start Contents --*/
 function downClick () {
     document.getElementById('contents').style.display = "block";

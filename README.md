@@ -2,16 +2,17 @@ htlp
 ============================
 
 ## Requirements
+- yarn 1.13.0
 - firebase-tools 6.3.0
 
 ## First
-- Install `yarn`
+- `yarn`
 
 ```
 brew install yarn
 ```
 
-- Install `firebase-tools`
+- `firebase-tools`
 
 ```
 yarn global add firebase-tools
@@ -19,7 +20,7 @@ yarn global add firebase-tools
 
 
 ## Devlopment
-- Access to `http://localhost:5000`
+- `http://localhost:5000`
 
 ```
 firebase serve
@@ -40,3 +41,5 @@ https://htlp.work
 - https://fontawesome.com/
 - https://github.com/cferdinandi/smooth-scroll
 - https://github.com/HubSpot/pace
+- https://github.com/sirxemic/jquery.ripples/
+
