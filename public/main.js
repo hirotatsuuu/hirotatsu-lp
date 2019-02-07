@@ -33,70 +33,74 @@ function downClick () {
 /*-- End Contents --*/
 
 /*-- Start Audio --*/
-$(function () {
-    var audioBtn = $('.audio_button'),
-        audioWrap = $('.audio_wrap'),
-        audio = document.getElementById('audio'),
-        bg = document.getElementById('bg'),
-        home = document.getElementById('home'),
-        about = document.getElementById('about'),
-        skills = document.getElementById('skills'),
-        policy = document.getElementById('policy'),
-        price = document.getElementById('price'),
-        contact = document.getElementById('contact');
+var audioBtn = $('.audio_button'),
+    audioWrap = $('.audio_wrap'),
+    audio = document.getElementById('audio'),
+    bg = document.getElementById('bg'),
+    home = document.getElementById('home'),
+    about = document.getElementById('about'),
+    skills = document.getElementById('skills'),
+    policy = document.getElementById('policy'),
+    price = document.getElementById('price'),
+    contact = document.getElementById('contact');
 
-    function playAudio () {
-        audio.play();
-        audioWrap.addClass('play');
-        bg.className = "animation";
-        home.className = "animation";
-        about.className = "animation";
-        skills.className = "animation";
-        policy.className = "animation";
-        price.className = "animation";
-        contact.className = "animation";
-    };
+function playAudio () {
+    audio.play();
+    audioWrap.addClass('play');
+    bg.className = "animation";
+    home.className = "animation";
+    about.className = "animation";
+    skills.className = "animation";
+    policy.className = "animation";
+    price.className = "animation";
+    contact.className = "animation";
+};
 
-    function pauseAudio () {
-        audio.pause();
-        audioWrap.removeClass('play');
-        bg.className = "";
-        home.className = "";
-        about.className = "";
-        skills.className = "";
-        policy.className = "";
-        price.className = "";
-        contact.className = "";
-    };
+function pauseAudio () {
+    audio.pause();
+    audioWrap.removeClass('play');
+    bg.className = "";
+    home.className = "";
+    about.className = "";
+    skills.className = "";
+    policy.className = "";
+    price.className = "";
+    contact.className = "";
+};
 
-    audioBtn.on('click', function () {
-        if( audioWrap.hasClass('play') ) {
-            pauseAudio()
-        } else {
-            playAudio();
-        }
-    });
-
-    var playBtn = $('.play_button');
-    playBtn.on('click', function () {
+audioBtn.on('click', function () {
+    if( audioWrap.hasClass('play') ) {
+        pauseAudio()
+    } else {
         playAudio();
-    });
-
-    var pauseBtn = $('.pause_button');
-    pauseBtn.on('click', function () {
-        pauseAudio();
-    });
-
-    document.addEventListener('visibilitychange', function () {
-        if (document.visibilityState == 'hidden') {
-            audio.pause();
-        } else if (document.visibilityState === 'visible') {
-            if( audioWrap.hasClass('play') ) {
-                audio.play();
-            }
-        }
-    }, false);
+    }
 });
+
+var playBtn = $('.play_button');
+playBtn.on('click', function () {
+    playAudio();
+});
+
+var pauseBtn = $('.pause_button');
+pauseBtn.on('click', function () {
+    setTimeout('up()', 2000);
+});
+
+function up() {
+    pauseAudio();
+    document.getElementById('contents').style.display = "none";
+};
+/*-- End Contents --*/
+
+document.addEventListener('visibilitychange', function () {
+    if (document.visibilityState == 'hidden') {
+        audio.pause();
+    } else if (document.visibilityState === 'visible') {
+        if( audioWrap.hasClass('play') ) {
+            audio.play();
+        }
+    }
+}, false);
 /*-- End Audio --*/
 
 /*-- Start Language --*/
