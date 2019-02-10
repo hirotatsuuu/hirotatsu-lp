@@ -15,20 +15,42 @@ var scroll = new SmoothScroll('a[href*="#"]', {
 /*-- Start Pace --*/
 Pace.on('done', function(){
     $('#bg').fadeIn();
+    homeRipples ();
 });
 /*-- End Pace --*/
 
 /*-- Start Ripples --*/
-$("#home").ripples({
-    resolution: 712,
-    dropRadius: 30,
-    perturbance: 0.04
-});
+function homeRipples () {
+    $("#home").ripples({
+        resolution: 712,
+        dropRadius: 30,
+        perturbance: 0.04
+    });
+};
+
+function contentsRipples () {
+    $("#contents").ripples({
+        resolution: 712,
+        dropRadius: 30,
+        perturbance: 0.04
+    });
+};
+
+function addHomeRipples () {
+    $("#home").addClass("jquery-ripples");
+};
 /*-- End Ripples --*/
 
 /*-- Start Contents --*/
 function downClick () {
     document.getElementById('contents').style.display = "block";
+    contentsRipples();
+};
+
+function up() {
+    pauseAudio();
+    document.getElementById('contents').style.display = "none";
+    $("#home").addClass("jquery-ripples");
 };
 /*-- End Contents --*/
 
@@ -54,6 +76,7 @@ function playAudio () {
     policy.className = "animation";
     price.className = "animation";
     contact.className = "animation";
+    addHomeRipples();
 };
 
 function pauseAudio () {
@@ -85,12 +108,6 @@ var pauseBtn = $('.pause_button');
 pauseBtn.on('click', function () {
     setTimeout('up()', 2000);
 });
-
-function up() {
-    pauseAudio();
-    document.getElementById('contents').style.display = "none";
-};
-/*-- End Contents --*/
 
 document.addEventListener('visibilitychange', function () {
     if (document.visibilityState == 'hidden') {
