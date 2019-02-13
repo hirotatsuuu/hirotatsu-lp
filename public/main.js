@@ -16,6 +16,7 @@ var scroll = new SmoothScroll('a[href*="#"]', {
 Pace.on('done', function(){
     $('#bg').fadeIn();
     homeRipples();
+    typed();
 });
 /*-- End Pace --*/
 
@@ -42,15 +43,17 @@ function addHomeRipples () {
 /*-- End Ripples --*/
 
 /*-- Start Typed --*/
-var typed = new Typed('#typed', {
-    strings: ["hirotatsu."],
-    startDelay: 1000,
-    typeSpeed: 100,
-    showCursor: false,
-    backDelay: 1000,
-    backSpeed: 100,
-    loop: true
-});
+function typed () {
+    var typed = new Typed('#typed', {
+        strings: ["hirotatsu."],
+        startDelay: 1000,
+        typeSpeed: 100,
+        showCursor: false,
+        backDelay: 1000,
+        backSpeed: 100,
+        loop: true
+    });
+};
 /*-- End Typed --*/
 
 /*-- Start Contents --*/
