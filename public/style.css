@@ -97,6 +97,12 @@ h3.heading {
     font-size: 10rem;
 }
 
+.down {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20vh;
+}
 .down a {
     font-size: 10rem;
     color: white;

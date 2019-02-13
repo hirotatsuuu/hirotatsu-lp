@@ -15,7 +15,7 @@ var scroll = new SmoothScroll('a[href*="#"]', {
 /*-- Start Pace --*/
 Pace.on('done', function(){
     $('#bg').fadeIn();
-    homeRipples ();
+    homeRipples();
 });
 /*-- End Pace --*/
 
@@ -40,6 +40,18 @@ function addHomeRipples () {
     $("#home").addClass("jquery-ripples");
 };
 /*-- End Ripples --*/
+
+/*-- Start Typed --*/
+var typed = new Typed('#typed', {
+    strings: ["hirotatsu."],
+    startDelay: 1000,
+    typeSpeed: 100,
+    showCursor: false,
+    backDelay: 1000,
+    backSpeed: 100,
+    loop: true
+});
+/*-- End Typed --*/
 
 /*-- Start Contents --*/
 function downClick () {

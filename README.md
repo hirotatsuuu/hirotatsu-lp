@@ -37,9 +37,11 @@ firebase deploy
 https://htlp.work
 
 ## Reference
+- https://firebase.google.com/
 - https://getbootstrap.com/
 - https://fontawesome.com/
+- https://jquery.com/
 - https://github.com/cferdinandi/smooth-scroll
 - https://github.com/HubSpot/pace
 - https://github.com/sirxemic/jquery.ripples/
-
+- https://github.com/mattboldt/typed.js/
