@@ -15,7 +15,10 @@ var scroll = new SmoothScroll('a[href*="#"]', {
 /*-- Start Pace --*/
 Pace.on('done', function(){
     $('#bg').fadeIn();
-    homeRipples();
+    typed();
+    if (window.parent.screen.width > 768) {
+        homeRipples();
+    }
 });
 /*-- End Pace --*/
 
@@ -42,22 +45,26 @@ function addHomeRipples () {
 /*-- End Ripples --*/
 
 /*-- Start Typed --*/
-var typed = new Typed('#typed', {
-    strings: ["hirotatsu."],
-    startDelay: 500,
-    typeSpeed: 100,
-    showCursor: false,
-    backDelay: 1000,
-    backSpeed: 100,
-    loop: true
-});
+function typed () {
+    var typed = new Typed('#typed', {
+        strings: ["hirotatsu."],
+        startDelay: 500,
+        typeSpeed: 100,
+        showCursor: false,
+        backDelay: 1000,
+        backSpeed: 100,
+        loop: true
+    });
+};
 /*-- End Typed --*/
 
 /*-- Start Contents --*/
 function downClick () {
     document.getElementById('contents').style.display = "block";
-    contentsRipples();
     setTimeout('playAudio()', 2000);
+    if (window.parent.screen.width > 768) {
+        contentsRipples();
+    }
 };
 
 function up() {
