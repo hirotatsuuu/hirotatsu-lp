@@ -173,12 +173,12 @@ h3.heading {
     color: white;
 }
 
-.sns svg.svg-inline--fa {
+.sns i {
     font-size: 3rem;
     margin: 1.2rem .5rem 0 0;
 }
 
-.sns svg.svg-inline--fa:hover {
+.sns i:hover {
     color: gray;
 }
 
@@ -236,12 +236,12 @@ h3.heading {
     color: white;
 }
 
-#contact svg.svg-inline--fa {
+#contact i {
     font-size: 3rem;
     margin: 1.2rem .5rem 0 0;
 }
 
-#contact svg.svg-inline--fa:hover {
+#contact i:hover {
     color: gray;
 }
 
@@ -283,6 +283,9 @@ h3.heading {
 }
 
 @media (min-width: 769px) {
+    #mobile-bgm {
+        display: none;
+    }
     /*-- Animation --*/
     #about.animation {
         animation: radiusAnime 3s ease 0s infinite alternate;
