@@ -361,11 +361,13 @@ h3.heading {
     .btn-secondary {
         width: 15rem;
     }
+
 }
 
 @media (max-width: 680px) {
     #home h1 {
         font-size: 3rem;
+        padding-top: 10rem;
     }
     .thanks {
         font-size: 3rem;
