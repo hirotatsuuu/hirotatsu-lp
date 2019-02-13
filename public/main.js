@@ -46,7 +46,7 @@ function addHomeRipples () {
 function typed () {
     var typed = new Typed('#typed', {
         strings: ["hirotatsu."],
-        startDelay: 1000,
+        startDelay: 500,
         typeSpeed: 100,
         showCursor: false,
         backDelay: 1000,
