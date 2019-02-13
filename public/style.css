@@ -9,17 +9,17 @@ body {
     margin: 0;
 }
 
+/*-- Pace --*/
+#bg {
+    display: none;
+}
+
 #bg.animation {
     animation: rainbow 8s ease 0s infinite alternate;
 }
 
 #home.animation {
     animation: rainbow 8s ease 0s infinite alternate;
-}
-
-/*-- Pace --*/
-#bg {
-    display: none;
 }
 
 @keyframes rainbow {
@@ -351,6 +351,11 @@ h3.heading {
 }
 
 @media (max-width: 768px) {
+    /*-- Pace --*/
+    #bg {
+        display: block;
+    }
+
     .navbar {
         position: relative;
         display: none;
