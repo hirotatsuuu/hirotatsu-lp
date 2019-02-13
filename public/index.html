@@ -66,7 +66,7 @@
                 <h1>hirotatsu</h1>
             </div>
             <div class="down text-center">
-                <a href="#about" onclick="downClick()" class="play_button"><i class="fas fa-angle-down"></i></a>
+                <a href="#about" onclick="downClick()"><i class="fas fa-angle-down"></i></a>
             </div>
         </div>
         <!-- End Home Section -->
@@ -108,7 +108,7 @@
                     <a data-scroll href="#home"><i class="fas fa-angle-up"></i></a>
                 </div>
             </nav>
-            <div id="mobile-bgm" class="sticky-top text-right">
+            <div id="mobile-bgm" class="sticky-top" style="float: right; margin-top: -4rem">
                 <div class="audio_button" style="margin:0 0 0 auto">
                     <span class="nav-link">BGM</span>
                 </div>
@@ -177,30 +177,69 @@
                 <div class="container text-center">
                     <h3 class="heading">Price</h3>
                     <div class="price">
-                        <table class="table table-borderless">
-                            <tbody>
-                                <tr>
-                                    <th scope="row">LP</th>
-                                    <td>5000yen~</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">WEB Site</th>
-                                    <td>10000yen~</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">WEB Application</th>
-                                    <td>10000yen~</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Update or Add</th>
-                                    <td>1000yen~</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Others</th>
-                                    <td>contact me..</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <span id="en_price">
+                            <table class="table table-borderless">
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">LP</th>
+                                        <td>5000yen~</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">WEB Site</th>
+                                        <td>10000yen~</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">WEB Application</th>
+                                        <td>15000yen~</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">WordPress</th>
+                                        <td>5000yen~</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Update or Add</th>
+                                        <td>1000yen~</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Others</th>
+                                        <td>contact me</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </span>
+                        <span id="ja_price">
+                            <table class="table table-borderless">
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">LP</th>
+                                        <td>5000円~</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">WEBサイト</th>
+                                        <td>10000円~</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">WEBアプリケーション</th>
+                                        <td>10000円~</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">WordPress</th>
+                                        <td>5000円~</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">既存の機能追加</th>
+                                        <td>1000円~</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">その他</th>
+                                        <td>お問い合わせ下さい</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </span>
+                        <div class="lang_wrap">
+                            <span class="lang_btn" onclick="enClick('price')">en</span>/<span class="lang_btn" onclick="jaClick('price')">ja</span>
+                        </div>
                         <a href="#contact" class="btn btn-secondary">CONTACT</a>
                     </div>
                 </div>

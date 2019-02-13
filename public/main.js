@@ -45,6 +45,7 @@ function addHomeRipples () {
 function downClick () {
     document.getElementById('contents').style.display = "block";
     contentsRipples();
+    setTimeout('playAudio()', 2000);
 };
 
 function up() {
@@ -127,6 +128,9 @@ document.getElementById("ja_detail").style.display = "none";
 document.getElementById("en_policy").style.display = "block";
 document.getElementById("ja_policy").style.display = "none";
 
+document.getElementById("en_price").style.display = "block";
+document.getElementById("ja_price").style.display = "none";
+
 function enClick (target) {
     if (target == "detail") {
         var enDetail = document.getElementById("en_detail");
@@ -140,6 +144,12 @@ function enClick (target) {
 
         enPolicy.style.display = "block";
         jaPolicy.style.display = "none";
+    } else if (target == "price") {
+        var enPrice = document.getElementById("en_price");
+        var jaPrice = document.getElementById("ja_price");
+
+        enPrice.style.display = "block";
+        jaPrice.style.display = "none";
     }
 };
 
@@ -156,6 +166,12 @@ function jaClick (target) {
 
         enPolicy.style.display = "none";
         jaPolicy.style.display = "block";
+    } else if (target == "price") {
+        var enPrice = document.getElementById("en_price");
+        var jaPrice = document.getElementById("ja_price");
+
+        enPrice.style.display = "none";
+        jaPrice.style.display = "block";
     }
 };
 /*-- End Language --*/
