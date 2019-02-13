@@ -16,7 +16,7 @@ var scroll = new SmoothScroll('a[href*="#"]', {
 Pace.on('done', function(){
     $('#bg').fadeIn();
     typed();
-    if (window.parent.screen.width > 768) {
+    if (window.innerWidth > 768) {
         homeRipples();
     }
 });
@@ -62,7 +62,7 @@ function typed () {
 function downClick () {
     document.getElementById('contents').style.display = "block";
     setTimeout('playAudio()', 2000);
-    if (window.parent.screen.width > 768) {
+    if (window.innerWidth > 768) {
         contentsRipples();
     }
 };
